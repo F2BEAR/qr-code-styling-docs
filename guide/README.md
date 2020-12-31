@@ -191,7 +191,7 @@ backgroundOptions: {
 ```
 
 :::tip
-You can learn more about the rest of the available options by clicking here!
+You can learn more about the rest of the available options by clicking [here!](../options/#object-options)
 :::
 
 ### Methods
@@ -238,5 +238,5 @@ You can then wrap this method on a function and call it on a button element on y
 If you don't set any parameters for this method, PNG will be the default extension type.
 
 :::tip
-You can learn more about these methods on the Methods Page.
+You can learn more about these methods on the [Methods Page.](../methods/)
 :::
