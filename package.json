@@ -1,0 +1,45 @@
+{
+	"name": "qr-code-styling-docs",
+	"version": "1.0.0",
+	"description": "This is the official documentation for the qr-code-styling library! An awesome qr code generator library built for the DOM",
+	"authors": [
+		{
+			"name": "Denys Kozak",
+			"email": "kozak.denys.dev@gmail.com",
+			"url": "https://www.linkedin.com/in/denys-kozak/"
+		},
+		{
+			"name": "Facundo Carbonel",
+			"email": "contacto@facu.dev",
+			"url": "https://facu.dev"
+		}
+	],
+	"license": "MIT",
+	"scripts": {
+		"dev": "vuepress dev",
+		"build": "vuepress build",
+		"eject": "vuepress eject"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vicbergquist/codesandbox-vuepress"
+	},
+	"devDependencies": {
+		"vuepress": "^1.0.0"
+	},
+	"keywords": [
+		"qr",
+		"qrcode",
+		"qr-code",
+		"js",
+		"qrjs",
+		"qrstyling",
+		"styling",
+		"qrbranding",
+		"branding",
+		"qrimage",
+		"image",
+		"qrlogo",
+		"logo"
+	]
+}
