@@ -8,8 +8,6 @@ pageClass: custom-page-class
 
 QR-Code-Styling is the JavaScript library for generating QR codes with a logo and custom styling for the DOM.
 
-Try it [here!](https://qr-code-styling.com)
-
 With this library developing a QR-code generator is as easy as doing this:
 
 ```javascript
@@ -35,6 +33,8 @@ const qrCode = new QRCodeStyling({
 qrCode.append(document.getElementById('canvas'))
 ```
 
+Try it [here!](https://qr-code-styling.com)
+
 If you have issues/suggestions/notes/questions, please [open an issue](https://github.com/kozakdenys/qr-code-styling/issues/new) or contact [@kozakdenys](https://github.com/kozakdenys). Let's create a cool library together.
 
 ## Installation
@@ -58,9 +58,7 @@ npm install qr-code-styling
 
 If you're willing to use the CDN link to get this library up and running, don't forget to add the script tag inside the head tag.
 
-## Core Concepts
-
-### QRCodeStyling Object Instance
+## QRCodeStyling Object Instance
 
 The QRCodeStyling is the main object of this library; we use its options and methods to generate the QR code.
 
@@ -76,7 +74,7 @@ qrCode.append(document.getElementById('canvas'))
 _Note: The options argument inside the QRCodeStyling Object instance is an object which includes all the options you want to apply in a key/value style._
 :::
 
-### Basic Options
+## Basic Options
 
 To generate a QR code, we must pass some options on the instance of the QRCodeStyling object; the most basic you must provide are:
 
@@ -107,7 +105,7 @@ const options = {
 const qrCode = new QRCodeStyling(options)
 ```
 
-### Basic Styling
+## Basic Styling
 
 For the QR code's styling, this library comes with a couple of style options to make your QR code look good.
 
@@ -194,7 +192,7 @@ backgroundOptions: {
 You can learn more about the rest of the available options by clicking [here!](../options/#object-options)
 :::
 
-### Methods
+## Methods
 
 QR-Code-Styling comes with three different Methods:
 
@@ -239,4 +237,41 @@ If you don't set any parameters for this method, PNG will be the default extensi
 
 :::tip
 You can learn more about these methods on the [Methods Page.](../methods/)
+:::
+
+## Gradients
+
+If you want to generate more stylized QR codes, QR-Code-Styling comes with a built-in gradient property, which accepts an object with the offsets and colors you want to apply on your QR code. 
+
+Three options accept the gradient property; those are:
+
+- options.dotsOptions.gradient
+- options.cornersSquareOptions.gradient
+- options.backgroundOptions.gradient
+- options.cornersDotOptions.gradient
+
+The gradient property accepts three different options:
+
+- type
+- rotation
+- colorStops
+An example of this property is the following:
+
+```javascript
+dotsOptions: {
+	type: "square",
+	gradient: {
+		type: "linear",
+		colorStops: [
+			{ offset: 0, color: "#B86598" },
+			{ offset: 0.5, color: "#84486D" },
+			{ offset: 1, color: "#6A1A4C" }
+		]
+	}
+}
+```
+As you can see in the example above, colorStops is an Array of objects with two options: offset and color; with those options filled, you will generate a QR code with a gradient style applied to it.
+
+:::tip
+[Click here](../options/#gradients) if you want to know more about all the specifications of the Gradient property's options.
 :::
