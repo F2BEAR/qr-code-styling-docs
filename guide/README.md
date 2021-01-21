@@ -255,7 +255,7 @@ The gradient property accepts three different options:
 - type
 - rotation
 - colorStops
-An example of this property is the following:
+An example of this property is the following: 
 
 ```javascript
 dotsOptions: {
